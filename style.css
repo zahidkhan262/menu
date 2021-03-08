@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.header1{
+    float: left;
+}
+.header1 span a{
+    color: white;
+    font-size: 1rem;
+    padding: 5px;
+    text-decoration: none;
+}
+.header2{
+    display: flex;
+    text-align: right;
+}
+.header2 ul{
+    float: right;
+    margin-right: 20px;
+
+}
+.header2 li{
+    display: inline-block;
+    margin: 0 10px;
+}
+.header2 a{
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+}
+.fa-globe{
+    font-size: 1.3rem;
+    color: white; 
+}
+.btn1{
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+/* navbar */
+nav{
+    width: 100%;
+  
+}
+.logo{
+    padding-top: 10px;
+}
+nav label{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+nav label span{
+    color: crimson;
+}
+nav ul{
+    text-align: center;
+    /* margin-right: 30px;  */
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+nav ul li a{
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    
+}
+nav ul li a:hover{
+    color: crimson;
+    text-decoration: none;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    /* line-height: 80px; */
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media screen and (max-width:856px){
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: absolute;
+        width: 100%;
+
+        height: 100vh;
+        margin-top: 20px;
+        background-color: gray;
+        left: -100%;
+        z-index: 100;
+        text-align: center;
+        transform: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 40px 20px;
+        position: relative;
+        /* top: 40px; */
+    }
+    nav ul li a{
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    nav ul li a:hover{
+        color: crimson;
+        padding: 10px;
+        font-weight: bold;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
